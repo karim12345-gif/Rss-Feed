@@ -1,0 +1,143 @@
+.feed-page {
+  background-color: lightgray;
+  display: flex;
+
+  .card-container {
+    width: 350px;
+    height: 570px;
+    margin: 15px 50px;
+    margin-left: 60px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px -5px;
+    transition: 0.5s;
+    animation: ease-in;
+    float: left;
+    padding: 10px;
+    background-color: white;
+    border-radius: 25px;
+    cursor: pointer;
+
+    .card-icon {
+      text-align: left;
+      margin: 20px;
+    }
+
+    .card-icon img {
+      width: 10%;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 25px 10px;
+      position: relative;
+    }
+
+    .image-container img {
+      overflow: hidden;
+      height: 200px;
+      width: 320px;
+      border-radius: 25px;
+    }
+
+    
+
+    .card-title {
+      font-size: 85%;
+      justify-content: space-between;
+      font-weight: bold;
+      font-style: italic;
+      position: relative;
+    }
+
+    .card-content {
+      position: relative;
+      justify-content: space-between;
+      margin: 2rem 0.4rem;
+
+      .card-creator {
+        margin-right: 10rem;
+        margin: 0.5rem 0.4rem;
+        justify-content: left;
+        font-size: small;
+        color: darkgray;
+        font-size: 70%;
+      }
+    }
+
+    .card-time {
+      margin-bottom: 0.5rem;
+      font-size: small;
+      color: darkgray;
+    }
+
+    .card-body {
+      font-size: 75%;
+      text-justify: inter-word;
+      font-style: normal;
+      justify-content: center;
+      color: rgba(0, 0, 0, 0.726);
+    }
+  }
+
+  .card-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 0px;
+  }
+
+  h2,
+  h4 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn button {
+    padding: 0.5rem;
+    background-color: white;
+    border: none;
+    transition: 0.2s;
+    margin-bottom: 0.5rem;
+    border-radius: 3px;
+  }
+
+  .btn button:hover {
+    background: rgba(27, 156, 252, 0.1);
+    transform: scale(1.1);
+  }
+
+  a {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: #0889ec;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 1890px) {
+    .card-container {
+      margin: 15px 50px;
+    }
+  }
+
+  @media screen and (max-width: 1486px) {
+    .card-container {
+      margin: 10px 60px;
+    }
+  }
+
+  @media screen and (max-width: 978px) {
+    .card-container {
+      margin: 10px 40px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .card-container {
+      width: 70%;
+    }
+  }
+}
